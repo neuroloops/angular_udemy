@@ -1,5 +1,8 @@
-<div style="text-align: center;">
-  <h1>welcome to {{ title }}!!</h1>
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="container" style="margin: 20px">
+  <div class="row">
+    <div class="col-xs-12">
+      <app-cart [items]="rootItems" (itemAdded)="onItemWasAdded($event)"></app-cart>
+    </div>
+  </div>
 </div>
-<p>Some text!</p>
-<app-user [name]="rootName" (nameChanged)="onNameChanged($event)"></app-user>
